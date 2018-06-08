@@ -3,16 +3,18 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CredentialingqueueComponent } from './credentialingqueue/credentialingqueue.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CredentialingqueueComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [CredentialingqueueComponent]
 })
 export class AppModule { }
