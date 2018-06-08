@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CredentialingqueueComponent } from './credentialingqueue.component';
+import { QueueComponent } from './queue.component';
 
-describe('CredentialingqueueComponent', () => {
-  let component: CredentialingqueueComponent;
-  let fixture: ComponentFixture<CredentialingqueueComponent>;
+describe('QueueComponent', () => {
+  let component: QueueComponent;
+  let fixture: ComponentFixture<QueueComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CredentialingqueueComponent ]
+      declarations: [ QueueComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CredentialingqueueComponent);
+    fixture = TestBed.createComponent(QueueComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

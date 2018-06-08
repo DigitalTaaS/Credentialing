@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { RouterModule } from '@angular/router';
 import { LoginService } from './login/login.service';
 import { routes } from './app.routing'
@@ -13,14 +14,20 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { CredInterceptor } from './shared/cred-interceptor';
 import { QueueComponent } from './review/queue/queue.component';
 import { CertificationComponent } from './review/certification/certification.component';
+=======
+>>>>>>> parent of e318a6a... Credentialing Queue Processing
 
 
 @NgModule({
   declarations: [
+<<<<<<< HEAD
     AppComponent,
     LoginComponent,
     QueueComponent,
     CertificationComponent
+=======
+    AppComponent
+>>>>>>> parent of e318a6a... Credentialing Queue Processing
   ],
   imports: [
     BrowserModule,
@@ -29,6 +36,7 @@ import { CertificationComponent } from './review/certification/certification.com
     HttpClientModule,
     RouterModule.forRoot(routes)
   ],
+<<<<<<< HEAD
   providers: 
   [LoginService, 
    AuthGuardService,
@@ -38,6 +46,9 @@ import { CertificationComponent } from './review/certification/certification.com
     multi: true
   }
   ],
+=======
+  providers: [],
+>>>>>>> parent of e318a6a... Credentialing Queue Processing
   bootstrap: [AppComponent]
 })
 export class AppModule { }
