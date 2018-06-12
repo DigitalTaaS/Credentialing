@@ -292,6 +292,22 @@ table.table td i {
     width:26%;
    }
 
+   .grayButton {
+    background-color: rgba(68, 68, 68, .25);
+    color: rgba(68, 68, 68, .5);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display:inline-block;
+    width: 30%;
+    margin: 0 15px 0 15px;
+}
+
    @media (max-width: 767px) {
     .psv {
         min-width: 130px; 
@@ -316,11 +332,28 @@ table.table td i {
     .whiteFocus {
         font-size: 14px;
     }
+    .grayButton {
+        font-size: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 36%;
+    }
+    .pagetitle {
+        font-size: 27px;
+    }
    }
    @media (min-width: 768px) {
     .short {
         display: none;
     }
+}
+
+
+
+.centered-buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:15px;
 }
 
 .approved {
@@ -374,6 +407,10 @@ table.table td i {
 }
 .fa-2x{
     font-size: 1.5em;
+}
+
+.padded {
+    padding: 20px 5px 20px 17px;
 }
 
 
@@ -483,9 +520,6 @@ hr {
     border-top: 2px solid rgba(0, 0, 0, 0.1);
   }
 
-  table td{
-      padding:10px;
-  }
 
   tr td{
       border:none;
