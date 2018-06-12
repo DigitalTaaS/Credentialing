@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-1 col-sm-1 col-md-2 col-lg-3 col-xl-3">
+    <div class="col-1 col-sm-1 col-md-1 col-lg-3 col-xl-3">
         <div class="sidemenu">
                 <div class="sticky-bar fixed-top">
                         <div class="logo">
@@ -31,6 +31,11 @@
                   </li>
               </ul>
               <div class="hr-border"></div>
+              <div class="back-button">
+                <button type="button" class="btn btn-default btn-sm whiteFocus" (click)="close()">
+                        <i class="fa fa-chevron-circle-left backChevron" aria-hidden="true"></i> Back
+                </button>
+            </div>
           </div>
   
             <br>
@@ -42,7 +47,7 @@
                 <span class="glyphicon glyphicon-chevron-left"></span> Back</button> -->
         </div>
     </div>
-    <div class="col-8">
+    <div class="col-10 col-md-10 col-lg-8">
       <div class="pagetitle credentialContent">CREDENTIALING REVIEW</div>
       <div class="row focus-area">
               <div class="focus-content">
@@ -52,27 +57,27 @@
                       </div>
                       <div class="name-underline"></div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-sm-5 col-lg-3">
                   <div class="client-gender">
                       Gender: Male
                   </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-sm-5 col-lg-7">
                     <div class="client-dob">
                         D.O.B: 12/20/1980
                     </div>
                 </div>             
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-sm-5 col-lg-3">
                     <div class="client-npi">
                         NPI: 4680023944
                     </div>
                 </div>               
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-sm-5 col-lg-5">
                     <div class="client-license">
                         License Number: 3967871102
                       </div>
                 </div>             
-                  <div class="col-12 col-md-3">
+                  <div class="col-12 col-sm-5 col-lg-3">
                       <div class="client-dew">
                           DEA: 000-000-000
                       </div>
@@ -90,40 +95,108 @@
               <thead>
                   <tr class="-webkit-column-rule">
                       <!-- <th>#</th> -->
-                      <th class="rowtitlecol1">CERTIFICATIONS</th>
-                      <th  class="rowtitlecol1"><span class="rowborder"></span> PRIMARY SOURCE VERIFICATION</th>
-                      <th  class="rowtitlecol1"><span class="rowborder"></span> APPROVAL STATUS </th>
+                      <th class="rowtitlecol1 certs"><span class="short">CERTS</span><span class="long">CERTIFICATIONS</span></th>
+                      <th  class="rowtitlecol1 psv"><span class="rowborder"></span><span class="short">PV</span><span class="long">PRIMARY SOURCE VERIFICATION</span></th>
+                      <th  class="rowtitlecol1 as"><span class="rowborder"></span><span class="short">APP STATUS</span><span class="long">APPROVAL STATUS</span></th>
                       <!-- <th>Actions</th> -->
                   </tr>
               </thead>
               <tbody>
                   <tr>
                       <td class="rowcontent11">NPI</td>
-                      <td class="rowcontent11">Verify ?</td>
-                      <td class="rowcontent11">Not required Pending Approved Denied</td>
+                      <td class="rowcontent11">
+                            <button type="button" class="btn btn-default btn-sm whiteFocus">
+                                <i class="fas fa-user-circle"></i> Verify 
+                            </button> 
+                            <button type="button" class="btn btn-default btn-sm questionOutline"><i class="fas fa-question-circle questionCircle"></i></button>
+                      </td>
+                      <td class="rowcontent11">
+                            <span class="status-button status-left"><span class="short">NR</span><span class="long">NOT REQUIRED</span></span> 
+                            <span class="status-button"><span class="short">PD</span><span class="long">PENDING</span></span>
+                            <span class="status-button approved"><span class="short">AP</span><span class="long">APPROVED</span></span>
+                            <span class="status-button status-right"><span class="short">DN</span><span class="long">DENIED</span></span>
+                        </td>
                   </tr>
                   <tr>
-                    <td  class="rowcontent11">PCP</td>
-                    <td  class="rowcontent11"></td>
-                    <td  class="rowcontent11"></td>
-                </tr>
-                  <tr>
-                    <td class="rowcontent11"></td>
-                    <td class="rowcontent11"></td>
-                    <td class="rowcontent11"></td>
-                </tr>
-                <tr>
-                  <td  class="rowcontent11"></td>
-                  <td  class="rowcontent11"></td>
-                  <td  class="rowcontent11"></td>
-              </tr>
-                <tr>
-                  <td class="rowcontent11"></td>
-                  <td class="rowcontent11"></td>
-                  <td class="rowcontent11"></td>
-              </tr>
-             
-           
+                        <td class="rowcontent11">NPI</td>
+                        <td class="rowcontent11">
+                              <button type="button" class="btn btn-default btn-sm whiteFocus">
+                                  <i class="fas fa-user-circle"></i> Verify 
+                              </button> 
+                              <button type="button" class="btn btn-default btn-sm questionOutline"><i class="fas fa-question-circle questionCircle"></i></button>
+                        </td>
+                        <td class="rowcontent11">
+                            <span class="status-button not-required status-left"><span class="short">NR</span><span class="long">NOT REQUIRED</span></span> 
+                            <span class="status-button"><span class="short">PD</span><span class="long">PENDING</span></span>
+                            <span class="status-button"><span class="short">AP</span><span class="long">APPROVED</span></span>
+                            <span class="status-button status-right"><span class="short">DN</span><span class="long">DENIED</span></span>
+                                 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rowcontent11">NPI</td>
+                        <td class="rowcontent11">
+                                <button type="button" class="btn btn-default btn-sm whiteFocus">
+                                    <i class="fas fa-user-circle"></i> Verify 
+                                </button> 
+                                <button type="button" class="btn btn-default btn-sm questionOutline"><i class="fas fa-question-circle questionCircle"></i></button>
+                        </td>
+                        <td class="rowcontent11">
+                            <span class="status-button status-left"><span class="short">NR</span><span class="long">NOT REQUIRED</span></span> 
+                            <span class="status-button"><span class="short">PD</span><span class="long">PENDING</span></span>
+                            <span class="status-button"><span class="short">AP</span><span class="long">APPROVED</span></span>
+                            <span class="status-button denied status-right"><span class="short">DN</span><span class="long">DENIED</span></span>
+                                 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rowcontent11">NPI</td>
+                        <td class="rowcontent11">
+                                <button type="button" class="btn btn-default btn-sm whiteFocus">
+                                    <i class="fas fa-user-circle"></i> Verify 
+                                </button> 
+                                <button type="button" class="btn btn-default btn-sm questionOutline"><i class="fas fa-question-circle questionCircle"></i></button>
+                        </td>
+                        <td class="rowcontent11">
+                            <span class="status-button status-left"><span class="short">NR</span><span class="long">NOT REQUIRED</span></span> 
+                            <span class="status-button pending"><span class="short">PD</span><span class="long">PENDING</span></span>
+                            <span class="status-button"><span class="short">AP</span><span class="long">APPROVED</span></span>
+                            <span class="status-button status-right"><span class="short">DN</span><span class="long">DENIED</span></span>
+                                 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rowcontent11">NPI</td>
+                        <td class="rowcontent11">
+                                <button type="button" class="btn btn-default btn-sm whiteFocus">
+                                    <i class="fas fa-user-circle"></i> Verify 
+                                </button> 
+                                <button type="button" class="btn btn-default btn-sm questionOutline"><i class="fas fa-question-circle questionCircle"></i></button>
+                        </td>
+                        <td class="rowcontent11">
+                            <span class="status-button not-required status-left"><span class="short">NR</span><span class="long">NOT REQUIRED</span></span> 
+                            <span class="status-button"><span class="short">PD</span><span class="long">PENDING</span></span>
+                            <span class="status-button"><span class="short">AP</span><span class="long">APPROVED</span></span>
+                            <span class="status-button status-right"><span class="short">DN</span><span class="long">DENIED</span></span>
+                                 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rowcontent11">NPI</td>
+                        <td class="rowcontent11">
+                                <button type="button" class="btn btn-default btn-sm whiteFocus">
+                                    <i class="fas fa-user-circle"></i> Verify 
+                                </button> 
+                                <button type="button" class="btn btn-default btn-sm questionOutline"><i class="fas fa-question-circle questionCircle"></i></button>
+                        </td>
+                        <td class="rowcontent11">
+                            <span class="status-button status-left"><span class="short">NR</span><span class="long">NOT REQUIRED</span></span> 
+                            <span class="status-button"><span class="short">PD</span><span class="long">PENDING</span></span>
+                            <span class="status-button approved"><span class="short">AP</span><span class="long">APPROVED</span></span>
+                            <span class="status-button status-right"><span class="short">DN</span><span class="long">DENIED</span></span>
+                                 
+                        </td>
+                    </tr>
               </tbody>
           </table>
       </div>

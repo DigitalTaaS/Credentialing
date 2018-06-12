@@ -32,6 +32,57 @@ body {
     padding-bottom: 15px;
 
 }
+.back-button {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+.backChevron {
+    color: rgba(68, 68, 68, .5);
+}
+
+.whiteFocus {
+    border-radius: 25px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgba(68, 68, 68, .5);
+    font-size:17px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.questionCircle {
+    color: rgba(68, 68, 68, .5);
+}
+.questionOutline {
+    background-color: white;
+    border-radius: 50px;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    margin-left: 30px;
+    border: none;
+}
+
+.status-button {
+    background-color: white;
+    padding: 8px;
+    color: rgba(68, 68, 68, 1);
+    font-size: 10px;
+    margin: -3px;
+    border-left: 1px solid rgba(112, 112, 112, .5);
+}
+.status-left {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border: none;
+}
+.status-right {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
 .sidelist {
     list-style-type: none;
     text-align:center;
@@ -106,7 +157,7 @@ div {
     text-align:center;
     border:none;
     font-size: 16px;
-    color: #777;
+    color: rgba(68, 68, 68, .5);
     font-family: 'FontAwesome', 'Roboto', sans-serif;
 }
     input:focus::-webkit-input-placeholder { color:transparent; }
@@ -128,7 +179,7 @@ table.table-striped tbody tr:nth-of-type(odd) {
 
 table.table-striped tbody tr:nth-of-type(even) {
     /* background-color: #fcfcfc; */
-    background-color: rgba(59, 149, 216, .1)
+    background-color: rgba(59, 149, 216, .2)
    
 }
 table.table-striped.table-hover tbody tr:hover {
@@ -207,7 +258,7 @@ table.table td i {
     font-size: 40px;
     color:#a5a1a1;
     opacity:100%;
-    text-align: left;
+    
    }
    .rowtitlecol1{
     font-family: 'Roboto', sans-serif;
@@ -216,10 +267,7 @@ table.table td i {
     font-size: 12px;
     color:#a5a1a1;
     opacity:100%;
-    text-align: left;
-    position:  549px  377px;
-    Width: 176px ;
-    Height: 28px ;
+    
    }
    .rowcontent11{
     font-family: 'Roboto', sans-serif;
@@ -227,15 +275,69 @@ table.table td i {
     font-size: 17px;
     color:#444444;
     opacity:100%;
-    text-align: left;
-    position:  549px  478px;
-    Width: 62px ;
-    Height: 28px ;
+    padding-left:15px;
+    
+   }
+   .as {
+       width: 43%;
+       padding-right: 7%;
+   }
+   .psv {
+       padding-left:15px;
+       width: 30%;
+       
+   }
+   .certs {
+    padding-left: 7%;
+    width:26%;
    }
 
+   @media (max-width: 767px) {
+    .psv {
+        min-width: 130px; 
+    }
+    .as {
+        min-width: 130px;
+        padding-right:1%;
+    }
+    .certs {
+        width: auto;
+    }
+    .long {
+        display: none;
+    }
+    .questionOutline {
+        margin-left: 4px;
+        font-size:10px;
+    }
+    .rowcontent11 {
+        font-size: 14px;
+    }
+    .whiteFocus {
+        font-size: 14px;
+    }
+   }
+   @media (min-width: 768px) {
+    .short {
+        display: none;
+    }
+}
 
+.approved {
+    background-color: rgba(139, 210, 214, 1);
+}
 
+.not-required {
+    background-color: rgba(198, 198, 198, 1);
+}
 
+.denied {
+    background-color: rgba(179, 156, 201, 1);
+}
+
+.pending {
+    background-color: rgba(139, 210, 214, 1);  
+}
 
    /*  Side nave  */img {
     image-rendering: auto;
@@ -457,7 +559,7 @@ hr {
 }
 
 .add-button {
-    color: #777;
+    color: rgba(68, 68, 68, .5);
     font-size: 20px;
     padding-top: 2px;
     padding-bottom: 0px;

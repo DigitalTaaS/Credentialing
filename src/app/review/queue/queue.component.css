@@ -103,7 +103,7 @@ table.table-striped tbody tr:nth-of-type(odd) {
 
 table.table-striped tbody tr:nth-of-type(even) {
     /* background-color: #fcfcfc; */
-    background-color: rgba(59, 149, 216, .1)
+    background-color: rgba(59, 149, 216, .2)
    
 }
 table.table-striped.table-hover tbody tr:hover {
